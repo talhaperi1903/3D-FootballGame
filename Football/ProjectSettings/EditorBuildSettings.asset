@@ -9,9 +9,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 910b6a4ab595ed34b8e65cb496c5debc
   - enabled: 1
+    path: Assets/Scenes/3DGame.unity
+    guid: f0afaf9c4a42ea64a887a0308e58b6d4
+  - enabled: 0
+    path: Assets/Scenes/GameOverScreen.unity
+    guid: d4e577527373576418db61466a8a204d
+  - enabled: 0
     path: Assets/Scenes/3DGameStadium.unity
     guid: 032aced0ac7166c4a8a215b61c646341
   - enabled: 1
-    path: Assets/Scenes/GameOverScreen.unity
-    guid: d4e577527373576418db61466a8a204d
+    path: Assets/Scenes/Settings.unity
+    guid: d98a4ac5bcbae244e83eada64a104d67
+  - enabled: 1
+    path: Assets/Scenes/Shop.unity
+    guid: ba3fc7570e24844459fea55469fde700
   m_configObjects: {}
