@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
-
+    public GameObject PauseScreenPanel;
 
     public GameObject GameOverPanel;
 
@@ -20,6 +20,7 @@ public class GameController : MonoBehaviour
     private bool MatchActive = false;
     void Start()
     {
+        PauseScreenPanel.gameObject.SetActive(false);
         GameOverPanel.gameObject.SetActive(false);
         SetTimeDisplay(MatchTime);
         StartTime = Time.time;
@@ -73,6 +74,20 @@ public class GameController : MonoBehaviour
         string SecondsDisplay = (Seconds < 10) ? "0" + Seconds.ToString() : Seconds.ToString();
         int Minutes = (SecondsToShow - Seconds) / 60;
         return Minutes.ToString() + ":" + SecondsDisplay;
+    }
+
+    public void OpenPausePanel()
+    {
+        Time.timeScale = 0;
+        PauseScreenPanel.gameObject.SetActive(true);
+
+    }
+
+    public void ResumeGamePanel()
+    {
+        Time.timeScale = 1;
+        PauseScreenPanel.gameObject.SetActive(false);
+
     }
 
 
